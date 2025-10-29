@@ -2,6 +2,5 @@
 
 
 # Prd3_Tech
-Site para divulgação (Tech_manutenção) 
-
+Tech_Manutenção: serviços de manutenção e montagem de PCs gamers, garantindo desempenho e qualidade.
 
