@@ -146,8 +146,50 @@ nav ul li a {
     /*Layout*/
     .container {
         max-width: 1140px;
+        justify-content: space-between;
 
+
+        /*Cabeçalho*/
     }
+
+    header {
+        height: 120px;
+    }
+
+    #logo img {
+        width: 200px;
+        height: 120px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin-top: 30px;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+
+
+    nav ul li a:hover {
+        color: var(#2e2bd1);
+    }
+
+
+    nav ul li {
+        border: 0;
+        float: left;
+        color: var(--Branco);
+    }
+
+    
 
     /*Fim -Notebook /Pc*/
 }
