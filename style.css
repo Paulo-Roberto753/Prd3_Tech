@@ -173,13 +173,21 @@ nav ul li a {
         margin-top: 30px;
     }
 
+
+    nav ul li {
+        border: 0;
+        float: left;
+    }
+
+
     nav ul li a {
         font-size: 1.5rem;
+        color: var(--Branco);
     }
 
 
     nav ul li a:hover {
-        color: var(#2e2bd1);
+        color: var(--Laranja);
     }
 
 
