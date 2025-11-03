@@ -5,3 +5,4 @@
 Tech_Manutenção: serviços de manutenção e montagem de PCs gamers, garantindo desempenho e qualidade.
 
 ## Acessar o site
+![](./img/qrcode.png)

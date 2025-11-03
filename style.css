@@ -158,7 +158,9 @@ nav ul li a {
 
     #logo img {
         width: 200px;
-        height: 120px;
+        height: 150px;
+        margin-top: 39px;
+        margin-left: 35px;
     }
 
     label {
