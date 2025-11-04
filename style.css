@@ -27,16 +27,17 @@ body {
     margin: 0 auto;
 }
 
-.btn{
+.btn {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 800;
-    background-color:  var(--Laranja);
+    background-color: var(--Laranja);
     padding: 10px 40px;
     color: var(--Preto);
     border-radius: 30px;
     border: 2px solid var(--Preto);
 }
+
 /*Fim - Layout*/
 
 
@@ -102,7 +103,7 @@ nav ul li a {
 /*Principal*/
 
 main {
-    height: 70vh;
+    height: 60vh;
     background: url(./img/prd3B.png);
     background-size: cover;
     background-position: center;
@@ -112,8 +113,6 @@ main {
 main h1 {
     color: var(--Preto);
     text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
-    ba
-
 }
 
 main h2 {
@@ -150,13 +149,13 @@ main .container {
 
 /*Principal*/
 
-main{
+main {
     height: 80vh;
 }
 
 main h1 {
     font-size: 2.75rem;
-    
+
 }
 
 main h2 {
@@ -244,11 +243,11 @@ main h2 {
         color: var(--Laranja);
     }
 
-        /*Principal*/
+    /*Principal*/
 
-        main{
-            height: 85vh;
-        }
+    main {
+        height: 85vh;
+    }
 
     nav ul li {
         border: 0;
@@ -272,8 +271,8 @@ main h2 {
     }
 
     main h1 {
-        font-size: ;
+        
     }
 
     /*Fim - Full Hd / 4K*/
-}
+ }
