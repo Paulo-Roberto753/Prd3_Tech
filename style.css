@@ -100,7 +100,7 @@ nav ul li a {
     color: var(--Preto);
 }
 
-/*Principal*/
+/* Principal */
 
 main {
     height: 60vh;
@@ -112,7 +112,9 @@ main {
 
 main h1 {
     color: var(--Preto);
-    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 5px 10px var(--Preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+
 }
 
 main h2 {
@@ -123,10 +125,12 @@ main h2 {
 
 main .container {
     height: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 
 /*Fim - smartphone Portrait*/
 
@@ -143,18 +147,17 @@ main .container {
     /*Cabeçalho*/
     nav ul {
         width: 30%;
-        right: -30;
+        right: -30%;
     }
-}
 
-/*Principal*/
+/* Principal */
 
 main {
     height: 80vh;
 }
 
 main h1 {
-    font-size: 2.75rem;
+    font-size: 1.75rem;
 
 }
 
@@ -164,7 +167,7 @@ main h2 {
 
 /*Fim - smartphone Landscape*/
 
-
+}
 /*teblet Portrait*/
 @media (min-width: 768px) {
 
@@ -195,6 +198,7 @@ main h2 {
 @media (min-width: 1200px) {
 
     /*Layout*/
+
     .container {
         max-width: 1140px;
         justify-content: space-between;
@@ -255,10 +259,10 @@ main h2 {
         color: var(--Branco);
     }
 
-
-
-    /*Fim -Notebook /Pc*/
 }
+
+/*Fim -Notebook /Pc*/
+
 
 
 /*Full Hd / 4K  */
@@ -270,9 +274,7 @@ main h2 {
 
     }
 
-    main h1 {
-        
-    }
+    main h1 {}
 
     /*Fim - Full Hd / 4K*/
- }
+}
