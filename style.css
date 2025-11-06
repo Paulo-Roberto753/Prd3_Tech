@@ -38,6 +38,7 @@ body {
     border: 2px solid var(--Preto);
 }
 
+/*(butão)*/
 /*Fim - Layout*/
 
 
@@ -104,7 +105,7 @@ nav ul li a {
 
 main {
     height: 60vh;
-    background: url(./img/prd3B.png);
+    background: url(./img/banner.jpeg);
     background-size: cover;
     background-position: center;
 
@@ -131,6 +132,54 @@ main .container {
     justify-content: center;
 }
 
+/*Destaque*/
+#destaque {
+    padding: 50px 10px;
+    background: url(./img/banner23.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaque .container {
+    flex-direction: column;
+}
+
+
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+
+}
+
+
+#hero-text h2 {
+    margin-bottom: 15px;
+    color: #faf9f6;
+}
+
+#hero-text p {
+    color: var(--Branco);
+}
+
+.topics {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+     
+}
+
+.topics p {
+    margin-left: 15px;
+    color: #faf9f6;
+}
+
+
 
 /*Fim - smartphone Portrait*/
 
@@ -150,24 +199,55 @@ main .container {
         right: -30%;
     }
 
-/* Principal */
+    /* Principal */
 
-main {
-    height: 80vh;
+    main {
+        height: 80vh;
+    }
+
+    main h1 {
+        font-size: 1.75rem;
+
+    }
+
+    main h2 {
+        font-size: 2.5rem;
+    }
+    /*Destaque*/
+
+    #destaque {
+        padding: 50px 0px;
+    }
+
+
+    #destaque .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+
+    #hero {
+        text-align: left;
+
+    }
+
+    #hero img {
+        width: 200px;
+        height: 200px;
+        margin: 0px 50px 0px 0px;
+
+    }
+
+    .topics{
+        display: none; /*<-------------- tira*/
+    }
+
+
+    /*Fim - smartphone Landscape*/
+
 }
 
-main h1 {
-    font-size: 1.75rem;
-
-}
-
-main h2 {
-    font-size: 2.5rem;
-}
-
-/*Fim - smartphone Landscape*/
-
-}
 /*teblet Portrait*/
 @media (min-width: 768px) {
 
@@ -259,6 +339,20 @@ main h2 {
         color: var(--Branco);
     }
 
+    /*Destaque*/
+    #destaque {
+        background-attachment: fixed;
+    }
+
+    #hero img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .topics{
+        display: flex;
+        
+    }
 }
 
 /*Fim -Notebook /Pc*/
