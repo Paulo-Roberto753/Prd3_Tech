@@ -8,30 +8,49 @@
     --Cinza: #3f3e3e;
 }
 
+/*bora comeso (1)*/
 #sobre {
     padding: 50px 20px;
-    background-color: var(--Cinza);
+    background-color: #3d3d3d;
+    color: var(--Branco);
 }
 
 #sobre .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
 
+#sobre #texto h2 {
+    font-size: 2rem;
+    color: var(--Laranja);
+    margin-bottom: 15px;
+}
+
+#sobre #texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#sobre #youtube iframe {
+    max-width: 560px;
+    height: 315px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.45);
 }
 
 /*CSS Reset*/
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
     font-family: "Black Ops One", system-ui;
-
 }
 
 .container {
@@ -53,7 +72,6 @@ body {
 /*(butão)*/
 /*Fim - Layout*/
 
-
 /*Smartphone Portrait*/
 
 /*cabeçalho*/
@@ -68,7 +86,6 @@ header {
     margin-top: 30px;
     margin-left: 30px;
     border-radius: 10px;
-
 }
 
 #check {
@@ -91,13 +108,9 @@ nav ul {
     right: -40%;
     width: 40%;
     transition: all 0.5s;
-
 }
 
-/*Ação para a caixa checkbox*/
-/*quando selecionado mudar propriedades ul*/
-
-#check:checked~ul {
+#check:checked ~ ul {
     right: 0px;
 }
 
@@ -114,32 +127,26 @@ nav ul li a {
 }
 
 /* Principal */
-
 main {
-    height: 100vh;
-    background: url(./img/banner.jpeg);
+    height: 70vh;
+    background: url(./img/banner1.jpeg);
     background-size: cover;
     background-position: center;
-
 }
-/*Nome PRd3_tech*/
+
 main h1 {
     color: var(--Preto);
-    font-size: 4.0rem;
-    
-    
-
+    font-size: 4rem;
 }
-/*Nome de baixo*/
+
 main h2 {
     color: var(--Preto);
-    font-size: .90rem;
+    font-size: 0.9rem;
     margin-bottom: 25px;
 }
 
 main .container {
     height: 100%;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -148,15 +155,15 @@ main .container {
 /*Destaque*/
 #destaque {
     padding: 50px 10px;
-    background: url(./img/banner23.jpg);
+    background: url(./img/imagem2.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 #destaque .container {
     flex-direction: column;
 }
-
 
 #hero {
     text-align: center;
@@ -166,13 +173,11 @@ main .container {
     width: 200px;
     height: 200px;
     margin-bottom: 30px;
-
 }
-
 
 #hero-text h2 {
     margin-bottom: 15px;
-    color: #faf9f6;
+    color: #dac97d;
 }
 
 #hero-text p {
@@ -183,132 +188,159 @@ main .container {
     display: flex;
     align-items: center;
     margin-top: 15px;
-
-     
 }
 
 .topics p {
     margin-left: 15px;
-    color: #faf9f6;
+    color: var(--Branco);
 }
 
+/* PDF / QR CODE */
+#pdf {
+    padding: 50px 10px;
+    background: url(./img/imagem2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
+#pdf .container {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+    align-items: center;
+}
 
-/*Fim - smartphone Portrait*/
+#pdf #text h2 {
+    font-size: 2rem;
+    color: var(--Laranja);
+    margin-bottom: 15px;
+    text-align: center;
+}
 
+#pdf #text p {
+    font-size: 1.1rem;
+    color: var(--Branco);
+    line-height: 1.6;
+    text-align: center;
+    max-width: 700px;
+}
+
+#pdf nav a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--Laranja);
+    color: var(--Preto);
+    border-radius: 20px;
+    font-weight: 800;
+    border: 2px solid var(--Preto);
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+#pdf #qrcode img {
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.45);
+}
+
+/* RESPONSIVIDADE COMPLETA */
+
+/* Tablet e celulares grandes */
+@media (max-width: 992px) {
+
+    #sobre .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    #youtube iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 300px;
+    }
+
+    #pdf .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #pdf #qrcode img {
+        width: 200px;
+    }
+
+    #pdf nav a {
+        padding: 15px 45px;
+        font-size: 1.3rem;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+
+    #sobre #texto h2,
+    #pdf #text h2 {
+        font-size: 1.8rem;
+    }
+
+    #sobre #texto p,
+    #pdf #text p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    #youtube iframe {
+        width: 100%;
+        height: 220px;
+    }
+
+    #pdf #qrcode img {
+        width: 150px;
+    }
+
+    #pdf nav a {
+        padding: 17px 50px;
+        font-size: 1.4rem;
+    }
+}
 
 /*smartphone Landscape*/
 @media (min-width: 576px) {
+    .container { max-width: 540px; }
+    nav ul { width: 30%; right: -30%; }
+    main { height: 80vh; }
+    main h1 { font-size: 3.75rem; }
+    main h2 { font-size: 1.5rem; }
 
-    /*Layout*/
-    .container {
-        max-width: 540px;
-
-    }
-
-    
-    /*Cabeçalho*/
-    nav ul {
-        width: 30%;
-        right: -30%;
-    }
-
-    /* Principal */
-
-    main {
-        height: 80vh;
-    }
-
-    main h1 {
-        font-size: 3.75rem;
-
-    }
-
-    main h2 {
-        font-size: 1.5rem;
-    }
-    /*Destaque*/
-
-    #destaque {
-        padding: 50px 0px;
-    }
-
-
-    #destaque .container {
-        flex-direction: row;
-        align-items: center;
-    }
-
-
-
-    #hero {
-        text-align: left;
-
-    }
-
-    #hero img {
-        width: 200px;
-        height: 200px;
-        margin: 0px 50px 0px 0px;
-
-    }
-
-   
-
-    /*Fim - smartphone Landscape*/
-
+    #destaque { padding: 50px 0; }
+    #destaque .container { flex-direction: row; align-items: center; }
+    #hero img { width: 200px; height: 200px; margin: 0 50px 0 0; }
 }
 
 /*tblet Portrait*/
 @media (min-width: 768px) {
-
-    /*Layout*/
-    .container {
-        max-width: 720px;
-
-    }
-
-    main h1 {
-        font-size: 8rem;
-    }
-
-    main h2 {
-        font-size: 2rem;
-    }
+    .container { max-width: 720px; }
+    main h1 { font-size: 8rem; }
+    main h2 { font-size: 2rem; }
 }
-
-/*Fim - smartphone Landscape*/
-
 
 /*teblet Landscape*/
 @media (min-width: 992px) {
-
-    /*Layout*/
-    .container {
-        max-width: 960px;
-
-    }
+    .container { max-width: 960px; }
 }
-
-/*Fim - tablet Landscape*/
-
 
 /*Notebook /Pc */
 @media (min-width: 1200px) {
 
-    /*Layout*/
-
     .container {
         max-width: 1140px;
         justify-content: space-between;
-
-
-        /*Cabeçalho*/
     }
 
-    header {
-        height: 120px;
-    }
+    header { height: 120px; }
 
     #logo img {
         width: 200px;
@@ -317,9 +349,7 @@ main .container {
         margin-left: 30px;
     }
 
-    label {
-        display: none;
-    }
+    label { display: none; }
 
     nav ul {
         position: static;
@@ -329,71 +359,39 @@ main .container {
         margin-top: 30px;
     }
 
-
     nav ul li {
         border: 0;
         float: left;
     }
-
 
     nav ul li a {
         font-size: 1.5rem;
         color: var(--Branco);
     }
 
-
     nav ul li a:hover {
         color: var(--Laranja);
     }
 
-    /*Principal*/
+    main { height: 85vh; }
 
-    main {
-        height: 85vh;
-    }
-
-    nav ul li {
-        border: 0;
-        float: left;
-        color: var(--Branco);
-    }
-
-    /*Destaque*/
-    #destaque {
-        background-attachment: fixed;
-    }
+    #destaque { background-attachment: fixed; }
 
     #hero img {
         width: 400px;
         height: 400px;
     }
 
-    .topics{
+    .topics {
         display: flex;
-        
+  
     }
 }
-
-/*Fim -Notebook /Pc*/
-
 
 
 /*Full Hd / 4K  */
 @media (min-width: 1400px) {
-
-    /*Layout*/
-    .container {
-        max-width: 1320px;
-
-    }
-
-    main h1 {
-        font-size: 4.5rem;
-        text-shadow: 0px 10px 20px var(--Preto);
-    }
-    main h2 {
-        font-size: 1.90rem;
-    }
-
-    /*Fim - Full Hd / 4K*/
+    .container { max-width: 1320px; }
+    main h1 { font-size: 4.5rem; text-shadow: 0px 10px 20px var(--Preto); }
+    main h2 { font-size: 1.9rem; }
 }
