@@ -70,7 +70,55 @@ body {
 }
 
 /*(butão)*/
+
+/*Cartão*/
+
+.card {
+    width: 342px;
+    height: 520px;
+    background-color: #413c3c;
+    margin-bottom: 25px;
+    border: 2px solid var(--Branco);
+    text-align: center;
+    border-radius: 25px;
+}
+
+
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+/*.card img {
+    border-radius: 25px 25px 0px 0px;
+}*/
+
+.card h2 {
+    font-size: 1.3rem;
+    margin: 15px 0px;
+    color: var(--Laranja)
+    
+}
+
+.card p{
+    color: var(--Preto);
+    text-align: center; /**/
+    padding: 0px 15px 45px 15px;
+    color: #faf9f6;
+}
+
 /*Fim - Layout*/
+
+/*cartões*/
+
+#pcgamer {
+    background-color: var(--Cinza);
+    padding: 50px 0px 25px 0px;
+}
+
+#pcgamer .container{
+    flex-direction: column;
+    align-items: center;
+}
 
 /*Smartphone Portrait*/
 
@@ -330,6 +378,16 @@ main .container {
 /*teblet Landscape*/
 @media (min-width: 992px) {
     .container { max-width: 960px; }
+     
+    #pcgamer .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-right: 25px;
+    }
+
 }
 
 /*Notebook /Pc */
@@ -386,6 +444,17 @@ main .container {
         display: flex;
   
     }
+    /*Cartões*/
+
+    .card {
+        margin-right: 0px;
+    }
+
+
+    #pcgamer .container {
+        flex-direction: row;
+    }
+
 }
 
 
