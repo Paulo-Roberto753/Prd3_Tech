@@ -342,7 +342,7 @@ main .container {
 
 @media (max-width: 600px) {
 
-    
+
     .mapa {
         display: none !important;
     }
@@ -523,6 +523,32 @@ main .container {
     main h2 {
         font-size: 1.9rem;
     }
+
+    #contato .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        max-width: 1400px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .mapa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
 }
 
 @media (max-width: 900px) {
@@ -535,9 +561,17 @@ main .container {
 
 #contato {
     background-color:#d0a06f; 
-    padding: 50px 20px;
+    padding: 20px 50px;
     color: var(--Branco);
 }
+
+.info-contato .item-contato{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
 
 footer {
     background-color: var(--Cinza);
@@ -568,6 +602,7 @@ footer {
     gap: 30px;
 }
 
+
 /*footer*/
 @media (max-width: 992px) {
     .footer {
@@ -588,8 +623,8 @@ footer {
     }
 
     #social img {
-        width: 26px;
-        height: 26px;
+        width: 45px;
+        height: 45px;
     }
 
     .footer {
