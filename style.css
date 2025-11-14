@@ -594,7 +594,7 @@ footer {
 
     .footer {
         gap: 10px;
-       
+        padding: 10px 15px;
     }
 }
 
