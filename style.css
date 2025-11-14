@@ -8,8 +8,7 @@
     --Cinza: #3f3e3e;
 }
 
-/*bora começar*/
-
+/*bora comeso (1)*/
 #sobre {
     padding: 50px 20px;
     background-color: #3d3d3d;
@@ -25,14 +24,13 @@
     margin: auto;
 }
 
-
-#sobre .texto h2 {
+#sobre #texto h2 {
     font-size: 2rem;
     color: var(--Laranja);
     margin-bottom: 15px;
 }
 
-#sobre .texto p {
+#sobre #texto p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
@@ -99,6 +97,7 @@ body {
 }
 
 .card p {
+    color: var(--Preto);
     text-align: center;
     padding: 0px 15px 45px 15px;
     color: #faf9f6;
@@ -134,15 +133,15 @@ html {
 
 /*cabeçalho*/
 header {
-
+    height: 65px;
     background-color: var(--Cinza);
-    height: 120px;
+    
 }
 
 #logo img {
     width: 140px;
     height: 90px;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-left: 30px;
     border-radius: 10px;
 }
@@ -152,7 +151,7 @@ header {
 }
 
 label {
-    color: rgba(226, 225, 221, 0.75);
+    color: rgba(255, 255, 255, 0.75);
     font-size: 3rem;
     position: fixed;
     right: 15px;
@@ -163,14 +162,13 @@ nav ul {
     height: 100vh;
     background-color: rgba(204, 195, 195, 0.9);
     position: fixed;
-    top: 120px;
+    top: 65px;
     right: -40%;
     width: 40%;
     transition: all 0.5s;
 }
 
-
-#check:checked ul {
+#check:checked ~ ul {
     right: 0px;
 }
 
@@ -306,7 +304,10 @@ main .container {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
 }
 
-/*smar*/
+
+
+
+
 
 
 @media (max-width: 992px) {
@@ -341,6 +342,7 @@ main .container {
 
 @media (max-width: 600px) {
 
+    
     .mapa {
         display: none !important;
     }
@@ -399,7 +401,7 @@ main .container {
     }
 }
 
-/*tablet Portrait*/
+/*tblet Portrait*/
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
@@ -414,7 +416,7 @@ main .container {
     }
 }
 
-/*tablet Landscape*/
+/*teblet Landscape*/
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
@@ -427,11 +429,11 @@ main .container {
 
     .card {
         margin-right: 25px;
-    }
+   }
 
 }
 
-/*Notebook / PC */
+/*Notebook /Pc */
 @media (min-width: 1200px) {
 
     .container {
@@ -439,7 +441,21 @@ main .container {
         justify-content: space-between;
     }
 
-    
+    header {
+        height: 120px;
+    }
+
+    #logo img {
+        width: 200px;
+        height: 120px;
+        margin-top: 39px;
+        margin-left: 30px;
+    }
+
+    label {
+        display: none;
+    }
+
     nav ul {
         position: static;
         width: 100%;
@@ -475,16 +491,25 @@ main .container {
         height: 400px;
     }
 
+    .topics {
+    
+        display: flex;
+
+    }
+
+
+
     .card {
         margin-right: 0px;
     }
+
 
     #pcgamer .container {
         flex-direction: row;
     }
 }
 
-/*Full HD / 4K*/
+/*Full Hd / 4K  */
 @media (min-width: 1400px) {
     .container {
         max-width: 1320px;
@@ -507,8 +532,9 @@ main .container {
 }
 
 /*rodapé*/
+
 #contato {
-    background-color: #d0a06f;
+    background-color:#d0a06f; 
     padding: 50px 20px;
     color: var(--Branco);
 }
@@ -517,7 +543,7 @@ footer {
     background-color: var(--Cinza);
     padding: 20px 0px;
     color: var(--Branco);
-    font-size: 0.95rem;
+    font-size: .95rem;
     align-items: center;
 }
 
@@ -542,7 +568,7 @@ footer {
     gap: 30px;
 }
 
-/*footer*/
+/*responsividade footer*/
 @media (max-width: 992px) {
     .footer {
         flex-direction: column;
