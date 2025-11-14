@@ -8,7 +8,8 @@
     --Cinza: #3f3e3e;
 }
 
-/*bora comeso (1)*/
+/*bora começar*/
+
 #sobre {
     padding: 50px 20px;
     background-color: #3d3d3d;
@@ -24,13 +25,14 @@
     margin: auto;
 }
 
-#sobre #texto h2 {
+
+#sobre .texto h2 {
     font-size: 2rem;
     color: var(--Laranja);
     margin-bottom: 15px;
 }
 
-#sobre #texto p {
+#sobre .texto p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
@@ -39,10 +41,10 @@
     max-width: 560px;
     height: 315px;
     border-radius: 12px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
 }
 
-/*CSS Reset*/
+/*CSS*/
 * {
     margin: 0;
     padding: 0;
@@ -88,25 +90,33 @@ body {
     border-radius: 25px 25px 0px 0px;
 }
 
-/*.card img {
-    border-radius: 25px 25px 0px 0px;
-}*/
+
 
 .card h2 {
     font-size: 1.3rem;
     margin: 15px 0px;
-    color: var(--Laranja)
-    
+    color: var(--Laranja);
 }
 
-.card p{
-    color: var(--Preto);
-    text-align: center; /**/
+.card p {
+    text-align: center;
     padding: 0px 15px 45px 15px;
     color: #faf9f6;
 }
 
+/*topo do site*/
+#topo {
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /*Fim - Layout*/
+
 
 /*cartões*/
 
@@ -115,23 +125,24 @@ body {
     padding: 50px 0px 25px 0px;
 }
 
-#pcgamer .container{
+#pcgamer .container {
     flex-direction: column;
     align-items: center;
 }
 
-/*Smartphone Portrait*/
+
 
 /*cabeçalho*/
 header {
-    height: 65px;
+
     background-color: var(--Cinza);
+    height: 120px;
 }
 
 #logo img {
     width: 140px;
     height: 90px;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-left: 30px;
     border-radius: 10px;
 }
@@ -141,7 +152,7 @@ header {
 }
 
 label {
-    color: rgba(216, 184, 39, 0.75);
+    color: rgba(226, 225, 221, 0.75);
     font-size: 3rem;
     position: fixed;
     right: 15px;
@@ -152,13 +163,14 @@ nav ul {
     height: 100vh;
     background-color: rgba(204, 195, 195, 0.9);
     position: fixed;
-    top: 65px;
+    top: 120px;
     right: -40%;
     width: 40%;
     transition: all 0.5s;
 }
 
-#check:checked ~ ul {
+
+#check:checked ul {
     right: 0px;
 }
 
@@ -291,12 +303,12 @@ main .container {
     width: 180px;
     height: 180px;
     border-radius: 12px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
 }
 
-/* RESPONSIVIDADE COMPLETA */
+/*smar*/
 
-/* Tablet e celulares grandes */
+
 @media (max-width: 992px) {
 
     #sobre .container {
@@ -326,18 +338,11 @@ main .container {
     }
 }
 
-/* Celulares */
+
 @media (max-width: 600px) {
 
-    #sobre #texto h2,
-    #pdf #text h2 {
-        font-size: 1.8rem;
-    }
-
-    #sobre #texto p,
-    #pdf #text p {
-        font-size: 1rem;
-        line-height: 1.4;
+    .mapa {
+        display: none !important;
     }
 
     #youtube iframe {
@@ -357,28 +362,64 @@ main .container {
 
 /*smartphone Landscape*/
 @media (min-width: 576px) {
-    .container { max-width: 540px; }
-    nav ul { width: 30%; right: -30%; }
-    main { height: 80vh; }
-    main h1 { font-size: 3.75rem; }
-    main h2 { font-size: 1.5rem; }
+    .container {
+        max-width: 540px;
+    }
 
-    #destaque { padding: 50px 0; }
-    #destaque .container { flex-direction: row; align-items: center; }
-    #hero img { width: 200px; height: 200px; margin: 0 50px 0 0; }
+    nav ul {
+        width: 30%;
+        right: -30%;
+    }
+
+    main {
+        height: 80vh;
+    }
+
+    main h1 {
+        font-size: 3.75rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    #destaque {
+        padding: 50px 0;
+    }
+
+    #destaque .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #hero img {
+        width: 200px;
+        height: 200px;
+        margin: 0 50px 0 0;
+    }
 }
 
-/*tblet Portrait*/
+/*tablet Portrait*/
 @media (min-width: 768px) {
-    .container { max-width: 720px; }
-    main h1 { font-size: 8rem; }
-    main h2 { font-size: 2rem; }
+    .container {
+        max-width: 720px;
+    }
+
+    main h1 {
+        font-size: 8rem;
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
 }
 
-/*teblet Landscape*/
+/*tablet Landscape*/
 @media (min-width: 992px) {
-    .container { max-width: 960px; }
-     
+    .container {
+        max-width: 960px;
+    }
+
     #pcgamer .container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -390,7 +431,7 @@ main .container {
 
 }
 
-/*Notebook /Pc */
+/*Notebook / PC */
 @media (min-width: 1200px) {
 
     .container {
@@ -398,17 +439,7 @@ main .container {
         justify-content: space-between;
     }
 
-    header { height: 120px; }
-
-    #logo img {
-        width: 200px;
-        height: 120px;
-        margin-top: 39px;
-        margin-left: 30px;
-    }
-
-    label { display: none; }
-
+    
     nav ul {
         position: static;
         width: 100%;
@@ -431,36 +462,112 @@ main .container {
         color: var(--Laranja);
     }
 
-    main { height: 85vh; }
+    main {
+        height: 85vh;
+    }
 
-    #destaque { background-attachment: fixed; }
+    #destaque {
+        background-attachment: fixed;
+    }
 
     #hero img {
         width: 400px;
         height: 400px;
     }
 
-    .topics {
-        display: flex;
-  
-    }
-    /*Cartões*/
-
     .card {
         margin-right: 0px;
     }
 
-
     #pcgamer .container {
         flex-direction: row;
     }
-
 }
 
-
-/*Full Hd / 4K  */
+/*Full HD / 4K*/
 @media (min-width: 1400px) {
-    .container { max-width: 1320px; }
-    main h1 { font-size: 4.5rem; text-shadow: 0px 10px 20px var(--Preto); }
-    main h2 { font-size: 1.9rem; }
+    .container {
+        max-width: 1320px;
+    }
+
+    main h1 {
+        font-size: 4.5rem;
+        text-shadow: 0px 10px 20px var(--Preto);
+    }
+
+    main h2 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .mapa iframe {
+        display: none !important;
+    }
+}
+
+/*rodapé*/
+#contato {
+    background-color: #d0a06f;
+    padding: 50px 20px;
+    color: var(--Branco);
+}
+
+footer {
+    background-color: var(--Cinza);
+    padding: 20px 0px;
+    color: var(--Branco);
+    font-size: 0.95rem;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.copy {
+    text-align: left;
+}
+
+#social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/*footer*/
+@media (max-width: 992px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    #social {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.9rem;
+    }
+
+    #social img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .footer {
+        gap: 10px;
+        padding: 10px 15px;
+    }
 }

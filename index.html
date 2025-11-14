@@ -19,7 +19,7 @@
 
 <body>
     <!--Cabeçalho-->
-    <header>
+    <header id="inicio">
         <div class="container">
             <div id="logo">
                 <img src="./img/logo.png" alt="Prd3Tech">
@@ -29,10 +29,10 @@
                 <input type="checkbox" id="check">
                 <label for="check">&#x268c;</label>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#">Videos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -151,6 +151,75 @@
 
         </div>
     </section>
-</body>
 
-</html>
+    <!--Contato-->
+    <!-- Contato -->
+    <address id="contato">
+        <div class="container contato-flex">
+
+            <!-- BLOCO: Mapa -->
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.765835377785!2d-46.5775427238886!3d-23.540923178813834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ec26cfdcfed%3A0x49e7eb66fd4f1f2!2sSenac%20Tatuap%C3%A9%20-%20Cel.%20Lu%C3%ADs%20Americano!5e0!3m2!1spt-BR!2sbr!4v1762986527000!5m2!1spt-BR!2sbr"
+                    width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- BLOCO: Informações de contato -->
+            <div class="info-contato">
+
+                <div class="item-contato">
+                    <img src="./img/googlemaps.png" alt="Ícone Mapa">
+                    <p>Zona Norte - São Paulo / SP</p>
+                </div>
+
+                <div class="item-contato">
+                    <img src="./img/hotmail.png" alt="Ícone E-mail">
+                    <p>Prd3_contato@hotmail.com</p>
+                </div>
+
+                <div class="item-contato">
+                    <img src="./img/whatsapp.png" alt="Ícone WhatsApp">
+                    <p>(11) 91234-5678</p>
+                    
+                </div>
+
+            </div>
+        </div>
+    </address>
+
+
+    <!--Rodapé-->
+    <footer>
+
+        <!-- Container do rodapé -->
+        <div class="container footer">
+
+            <!-- Texto de direitos autorais -->
+            <div class="copy">
+                <p>&#169; 2025 - PRD3_Tech</p>
+            </div>
+
+            <!-- Ícones das redes sociais -->
+            <div id="social">
+                <!-- Cada link leva para uma rede social -->
+                <a href="https://www.youtube.com/@Prd3_Tech" target="_blank"><img src="./img/youtube.png"
+                        alt="youtube"></a>
+
+                <a href="https://www.linkedin.com/in/paulo-roberto-168930261/" target="_blank"><img
+                        src="./img/linkedin.png" alt="linkedin"></a>
+
+                        <a href="https://github.com/Paulo-Roberto753" target="_blank"><img
+                        src="./img/Github.png" alt="github"></a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- BOTÃO PARA VOLTAR AO TOPO -->
+    <div id="topo">
+        <!-- Link que leva para o início da página -->
+        <a href="#inicio">
+            <img src="./img/toplight.png" alt="icon top">
+        </a>
+    </div>
